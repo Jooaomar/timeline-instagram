@@ -33,7 +33,7 @@ body {
   display: flex;
   /* flex-direction: row; */
   margin: 8px 4px 8px 12px;
-  margin-top: 20px;
+  margin-top: 20px; 
 }
 
 .descricao {
@@ -48,8 +48,8 @@ body {
 .post {
   display: flex;
   flex-direction: column;
-  pointer-events: auto;
-  position: relative;
+  pointer-events: auto; /*Não precisa - evento de ponteiro*/
+  position: relative;  /*Não precisa - indica que pode ser afetada por outras configurações*/
 }
 
 .container {
@@ -67,7 +67,7 @@ body {
 .icons {
   display: flex;
   width: 7%;
-  flex-direction: row;
+  flex-direction: row;  /*Não necessário -por padrão é row */
   margin-left: 12px;
   margin-top: 12px;
 }
@@ -84,13 +84,9 @@ input {
   width: 100%;
   border: none;
   padding: 10px 0;
+  outline: 0;  /*Remove bordas internas*/
 }
 
-span {
-  display: block;
-  overflow: hidden;
-  padding: 0 5px 0 0;
-}
 
 .comentario {
   display: flex;
